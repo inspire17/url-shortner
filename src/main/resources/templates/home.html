@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>URL Shortener</title>
+</head>
+<body>
+<h1>Enter complete URL</h1>
+<form action="/shorten" method="post">
+    <input type="text" name="url" placeholder="Enter URL to shorten" required/>
+    <button type="submit">Shorten Me</button>
+</form>
+
+<h2 th:text="${shorturl}"></h2>
+
+<hr/>
+
+<h1>Retrieve Original URL</h1>
+<form action="/extended" method="post">
+    <input type="text" name="shortUrl" placeholder="Enter shortened URL" required/>
+    <button type="submit">Get Original URL</button>
+</form>
+
+<h2 th:text="${originalurl}"></h2>
+</body>
+</html>
