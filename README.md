@@ -112,20 +112,3 @@ curl -X POST "http://localhost:8080/shorten" -d "url=https://example.com"
 ```bash
 http://localhost:8080/abc123
 ```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature-name`)
-3. Commit your changes (`git commit -m "Add feature"`)
-4. Push to the branch (`git push origin feature-name`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License.
-
-## Acknowledgments
-
-- Built with [Spring Boot](https://spring.io/projects/spring-boot) and [Kotlin](https://kotlinlang.org/)
-- Inspired by URL shortening services like [Bitly](https://bitly.com/)
